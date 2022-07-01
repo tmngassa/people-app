@@ -1,0 +1,25 @@
+<div class="page-padding">
+<h1 class="text-center">List of People</h1>
+
+<table class="table table-striped table-hover">
+    <thead>
+      <tr>        
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col"> Action     </th>
+      </tr>
+    </thead> 
+    <tbody>
+      <tr *ngFor="let p of people">        
+        <td>{{p.firstName}}</td>
+        <td>{{p.lastName}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="deletePeople(p.id)">Delete</button></td>
+      </tr>
+      <tr *ngIf="people.length == 0">
+          <td colspan="3" class="text-center">
+              No people to display
+          </td>
+      </tr>             
+    </tbody>    
+  </table>
+</div>
