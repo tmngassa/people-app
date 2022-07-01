@@ -1,4 +1,4 @@
-#People App
+# People App
 
 This is a sample Angular People Application to display list of people in table with an action button to delete the people record.
 
